@@ -53,3 +53,23 @@ export const movies = (state = initialMoviesState, action) => {
       return state;
   }
 };
+
+const initialSearchState = {
+  result: {},
+};
+
+export function search(state = initialSearchState, action) {
+  return state;
+}
+
+const initialRootReducer = {
+  movies: initialMoviesState,
+  search: initialSearchState,
+};
+
+export default function rootReducer(state = initialRootReducer, action) {
+  return {
+    movies: movies(state.movies, action),
+    search: search(state.search, action),
+  };
+}

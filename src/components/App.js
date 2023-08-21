@@ -18,15 +18,16 @@ class App extends React.Component {
     console.log('State', store.getState());
   }
   isMovieFavourites = (movie) => {
-    const { favourites } = this.props.store.getState();
+    const { movies } = this.props.store.getState();
 
-    return favourites.includes(movie);
+    return movies.favourites.includes(movie);
   };
   onChangetab = (val) => {
     this.props.store.dispatch(showFavourites(val));
   };
   render() {
-    const { list, favourites, showFavourite } = this.props.store.getState();
+    const { movies } = this.props.store.getState();
+    const { list, favourites, showFavourite } = movies;
 
     const displayMovies = showFavourite ? favourites : list;
     return (
