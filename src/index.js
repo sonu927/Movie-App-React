@@ -6,7 +6,6 @@ import thunk from 'redux-thunk';
 import './index.css';
 import App from './components/App';
 import rootReducer from './reducers';
-import AppWrapper from './components/App';
 
 //curry function form of function(obj,next,action){}
 // const logger = function ({ dispatch, getState }) {
