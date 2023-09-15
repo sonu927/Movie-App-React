@@ -3,6 +3,9 @@
 Designed this movie app in which you can look at different movies and add them to your favourites.
 You can also search a particular movie and add it to movie list.
 
+## Check it out on below given link
+https://sonu927.github.io/Movie-App-React/
+
 
 ## Available Scripts
 
